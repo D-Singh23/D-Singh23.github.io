@@ -258,7 +258,7 @@ p.item-3{
     padding: 0 10px 0 10px;
     text-align:center;
     text-decoration: none;
-    background-color: var(--clr-gray200);
+    background-color: #00000000;
 
     border-radius: 30px;
     color:#000;
@@ -268,7 +268,7 @@ p.item-3{
 }
 
 p.item-3:hover{
-    background-color: var(--clr-gray100);
+    background-color: #00000000;
     box-shadow: -2px -2px 5px #0000005e, 3px 3px 5px #ffffffe0;
 }
 
