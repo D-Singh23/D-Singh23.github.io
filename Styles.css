@@ -38,6 +38,7 @@ section{
     z-index: -3;
     overflow: hidden;
     position:fixed;
+filter: blur(80px);
     
 }
 
