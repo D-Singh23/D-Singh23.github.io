@@ -38,7 +38,7 @@ section{
     z-index: -3;
     overflow: hidden;
     position:fixed;
-    filter: blur(0px);
+    
 }
 
 section .color:nth-child(1) {
