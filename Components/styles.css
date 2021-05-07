@@ -1,83 +1,164 @@
+@import url('https://fonts.googleapis.com/css? family Poppins: 200, 300, 400, 500, 600, 700, 800, 900 & display swap');
+
+*{
+font-family: 'Poppins', sans-serif;
+padding: 0;
+cursor:none;
+-webkit-user-select: none; /* Safari */
+-ms-user-select: none; /* IE 10 and IE 11 */
+user-select: none; /* Standard syntax */
+}
+
 body{
-    font-family: 'Raleway';
+   background: #161623;
+  max-height: 100vh;
+  margin: 0;
+  padding:0;
 }
 
-
-
-section{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items :center;
-    z-index: -3;
-    overflow: hidden;
-    position:fixed;
-    filter: blur(80px);
-}
-
-section .color:nth-child(1) {
-    background-color: #FFC0AB;
-    height: 50vh;
-    width: 55vw;
-    margin-left: -5vw;
-    margin-top: 70vh;
-    margin-bottom: 0;
-    border-radius: 10%;
-}
-
-section .color:nth-child(2) {
-    background-color: #EFB7F2;
-    height: 45vh;
-    width: 50vw;
-    margin-left:0;
-    margin-top: 65vh;
-}
-
-section .color:nth-child(4){
-    background-color: #A5D9FF;
-    height: 70vh;
-    width: 60vw;
-    margin-left:75vw;
-    margin-top: -110vh;
+.cursor{
+  
+    z-index: 100;
     position: absolute;
-}
-section .color:nth-child(3){
-    background-color: #00ff95;
-    height: 80vh;
-    width: 65vw;
-    margin-left:75vw;
-    margin-top: -110vh;
-    position: absolute;
+    top: 0;
+    left: 0;
+    /* border: 2px solid white; */
+    background-color: #00000055;
+    border: 3px solid #ffffff44;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform 0s;
+  }
+
+.colora{
+  position: fixed;
+  top: -10%;
+  left: -10%;
+  width: 25em;
+  height: 25em;
+  border-radius: 100%;
+  background: linear-gradient(#2196f3, #e91e63);
+  z-index: -10;
+  
 }
 
-h3{
-    font-weight: 300;
-}
+.colorb{
+  position: fixed;
+  top: 50vh;
+  left: 60vw;
+  width: 50em;
+  height: 50em;
+  border-radius: 100%;
+  background: linear-gradient(#f00, #f0f);
+  z-index: -10;
 
-.icm{
-    background-color: #018dff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 25px;
+}
+.h{
     color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
-}
-.icm:hover{
-    transform: scale(0.98);
-}
-.ip{
-    height: 15vh;
+    text-align: center;
 }
 
-@media screen and (max-width:500px) {
-    .icm{
-        flex-direction: column;
-    }
+.cc{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index:1;
+}
+
+.container .card{
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0 , 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px);
+  transform: perspective(1000px);
+}
+
+.container .card .content{
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+  align-content: center;
+
+}
+
+.container .card .content h3{
+  position: absolute;
+  top: -150px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+}
+.container .card .content h2{
+    font-size: 1.8em;
+    color: #fff;
+    transform: perspective(10px);
+  }
+
+.container .card .content p{
+  font-size: 1em;
+  color: #fff;
+  font-weight:300;
+  position: relative;
+  transform: perspective(10px);
+  
+}
+
+.container .card .content a{
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    padding: 0.5em 2em;
+    border-radius: 50px;
+}
+
+.lm{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 100;
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+
+}
+.tlm{
+    margin-bottom: 5vh;
+    padding: 1em 1em;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+
+}
+
+.js-tilt-glare {
+    border-radius: 15px;
+  }

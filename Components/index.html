@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap" rel="stylesheet">
     <title>Components</title>
 </head>
 <body>
-    <section>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-    </section>
-    <h1>Components</h1>
-    <h3>These are some free and Open Source Website Templates made by using HTML, CSS and Javascript.</br>These are alse responsive (Moble frendly)</h3>
-    <div class="icm" onclick="location.href='material.html'">
-        <p class="item">Material</p>
-        <img src="Images/Material.png" class="ip">
-    </div>
-</body>
+
+<div class="colora"></div>
+<div class="colorb"></div>
+
+    <h1 class="h">Web Design Components</h1>
+    
+    <section class="cc">
+    <div class="container">
+  
+  <div class="card"  onclick="location.href='material.html';"    data-tilt data-tilt-glare="true"
+  data-tilt-max-glare="0.5"
+  data-tilt-speed="400">
+    <div class="content">
+    <h2>Material</h2>
+    <h3>Material</h3>
+    <a href="material.html">View</a>
+    </div></div>
+      <div class="card" data-tilt  data-tilt data-tilt-glare="true"
+      data-tilt-max-glare="0.5"
+      data-tilt-speed="400">
+    <div class="content">
+    <h3>Glass</h3>
+    <h2>Glass</h2>
+    <a href="...">Comming Soon</a>
+
+    </div></div>
+      <div class="card" data-tilt  data-tilt data-tilt-glare="true"
+      data-tilt-max-glare="0.5"
+      data-tilt-speed="400">
+    <div class="content">
+    <h3>?</h3>
+    <h2>?</h2>
+    </div></div>
+  </div>
+  </section>
+  <div class="lm" >
+      <a class="tlm" data-tilt data-tilt-glare data-tilt-max-glare="0.5">Learn More &#8594</a>
+  </div>
+  <div class="cursor"></div>
+
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script>
+    const cursor = document.querySelector('.cursor');
+
+window.addEventListener('mousemove', e => {
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+    cursor.setAttribute('data-fromTop', (cursor.offsetTop - scrollY))});
+
+window.addEventListener('scroll', () => {
+    const fromTop = parseInt(cursor.getAttribute('data-fromTop'));
+    cursor.style.top = scrollY + fromTop +'px';
+    console.log(fromTop);
+})
+</script>
+  </body>
 </html>
